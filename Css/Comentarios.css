@@ -1,0 +1,202 @@
+/*
+    Comentario principal
+*/
+.Comentarios{
+    position: absolute;
+    display: flex;
+    top: 10%;
+    width: 99%;
+    height: 90%;
+    padding: 10px 20px;
+    z-index: 11;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    transform: scale(0);
+    transition: transform .2s ease;
+}
+.Comentarios.active{
+    transform: scale(1);
+}
+/*
+    Introducion
+*/
+.Intro{
+    position: absolute;
+    display: flex;
+    top: 10%;
+    width: 99%;
+    height: 90%;
+    padding: 10px 20px;
+    z-index: 11;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    transform: scale(1);
+    transition: transform .2s ease;
+}
+.Intro.desactivado{
+    transform: scale(0);
+}
+h1{
+    position: relative;
+    top: -20%;
+    font-size: 2.2em;
+    color: #262626;
+    transition: color .5s ease;
+}
+input{
+    font-size: 2.2em;
+    width: 200px;
+    height: 60px;
+    color: #262626;
+    border-radius: 15px;
+    cursor: pointer;
+    background: transparent;
+    border: 3px solid #262626;
+    transition: color .5s ease,box-shadow .3s ease, border .3s ease;
+}
+input:hover{
+    box-shadow: 0 0 30px rgba(255, 255, 255, 0.986), inset 0 0 10px rgba(255, 255, 255, 0.986);
+    border: 4px solid #F2F2F2;
+}
+.BoxCenter:hover h1{
+    color: #F2F2F2;
+}
+.BoxCenter:hover input{
+    color: #F2F2F2;
+    border: 3px solid #F2F2F2;
+}
+/*
+    Comentario 1
+*/
+.Pregun1{
+    position: absolute;
+    display: flex;
+    top: 10%;
+    width: 99%;
+    height: 90%;
+    padding: 10px 20px;
+    z-index: 11;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    transform: scale(0);
+    transition: transform 1s ease;
+}
+.Pregun1.active{
+    transform: scale(1);
+}
+.Si{
+    position: absolute;
+    left: 600px;
+}
+.No{
+    position: absolute;
+    right: 600px;
+    transition: left .15s ease, top .15s ease;
+}
+p{
+    position: absolute;
+    bottom: 0;
+    font-size: 2.0em;
+    color: #F2F2F2;
+}
+/*
+    Pregunta 2
+*/
+.Pregun2{
+    position: absolute;
+    display: flex;
+    top: 10%;
+    width: 99%;
+    height: 90%;
+    padding: 10px 20px;
+    z-index: 12;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    transform: scale(0);
+    transition: transform 1s ease;
+}
+.Pregun2.active{
+    transform: scale(1);
+}
+.Si2{
+    position: absolute;
+    left: 600px;
+    bottom: 200px;
+    font-size: 2.2em;
+    width: 200px;
+    height: 60px;
+    color: #262626;
+    border-radius: 15px;
+    cursor: pointer;
+    background: transparent;
+    border: 3px solid #262626;
+    transition: color .5s ease,box-shadow .3s ease, border .3s ease;
+}
+.BoxCenter:hover button{
+    color: #F2F2F2;
+    border: 3px solid #F2F2F2;
+}
+.No2{
+    position: absolute;
+    right: 600px;
+    bottom: 200px;
+}
+.Si2:hover{
+    box-shadow: 0 0 30px rgba(255, 255, 255, 0.986), inset 0 0 10px rgba(255, 255, 255, 0.986);
+    border: 4px solid #F2F2F2;
+}
+/*
+    Pregunta 3
+*/
+.Pregun3{
+    position: absolute;
+    display: flex;
+    top: 10%;
+    width: 99%;
+    height: 90%;
+    padding: 10px 20px;
+    z-index: 11;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    transform: scale(0);
+    transition: transform 1s ease;
+}
+.Pregun3.active{
+    transform: scale(1);
+}
+.Si3{
+    position: absolute;
+    left: 600px;
+}
+.No3{
+    position: absolute;
+    right: 600px;
+    transition: left .15s ease, top .15s ease;
+}
+
+/*
+    Pregunta 4
+*/
+
+.Pregun4{
+    position: absolute;
+    display: flex;
+    top: 10%;
+    width: 99%;
+    height: 90%;
+    padding: 10px 20px;
+    z-index: 11;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    transform: scale(0);
+    transition: transform 1s ease;
+}
+.Pregun4.active{
+    transform: scale(1);
+}
