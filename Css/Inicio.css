@@ -1,0 +1,39 @@
+.InicioPro{
+    position: absolute;
+    display: flex;
+    top: -1000px;
+    width: 99%;
+    height: 90%;
+    padding: 10px 20px;
+    z-index: 11;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    transform: scaleY(0);
+    transition: top .2s ease, transform .3s ease;
+}
+.InicioPro.active{
+    top: 10%;
+    transform: scaleY(1);
+}
+.Titulo{
+    font-family: monospace;
+    font-size: 4.8em;
+    top: -10vh;
+}
+.Adorno{
+    content: '';
+    position: absolute;
+    width: 300px;
+    height: 2px;
+    top: 35vh;
+    background: #F2F2F2;
+    border-radius: 20px;
+    transition: transform .5s;
+}
+.IntroInicio{
+    font-size: 1.2em;
+    top: 37vh;
+    color: #F2F2F2;
+    font-family: monospace;
+}
