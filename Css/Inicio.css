@@ -1,0 +1,80 @@
+.InicioPro{
+    position: absolute;
+    display: flex;
+    top: -1000px;
+    width: 99%;
+    height: 90%;
+    padding: 10px 20px;
+    z-index: 11;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    transform: scaleY(0);
+    transition: top .2s ease, transform .3s ease;
+}
+.BoxCenter:hover .InicioPro{
+    animation: floatImage 4s ease-in-out infinite;
+    animation-delay: .2s;
+}
+.InicioPro.active{
+    top: 18%;
+    transform: scaleY(1);
+}
+.Titulo{
+    font-family: monospace;
+    font-size: 15em;
+    top: -12vh;
+    text-shadow: 0 0 50px rgba(0, 0, 0, 0.986);
+    transition: text-shadow 1s ease;
+}
+.BoxCenter:hover .Titulo{
+    text-shadow: 0 0 30px rgba(255, 255, 255, 0.986);
+}
+.Adorno{
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    top: 40vh;
+    background-color: #262626;
+    border-radius: 20px;
+    box-shadow: 0 0 30px rgba(255, 255, 255, 0.986), inset 0 0 10px rgba(255, 255, 255, 0.986);
+    transition: transform .5s ease, background .5s ease, width .5s ease;
+}
+.BoxCenter:hover .Adorno{
+    width: 500px;
+}
+.IntroInicio{
+    font-size: 1.2em;
+    top: 43vh;
+    color: #262626;
+    font-family: monospace;
+    transition: color .5s ease;
+}
+.BoxCenter:hover .IntroInicio{
+    color: #F2F2F2;
+}
+
+@keyframes zoomImagenes{
+    0% {
+        transform: scale(0);
+        opacity: 0;
+    }
+    100%{
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+@keyframes floatImage{
+    0% {
+        transform: translateY(0);
+    }
+    50%{
+        transform: translateY(-24px);
+    }
+    100%{
+        transform: translateY(0);
+    }
+}
+
