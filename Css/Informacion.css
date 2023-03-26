@@ -1,0 +1,51 @@
+.InformacionGaes{
+    position: absolute;
+    top: 0;
+    width: 101%;
+    height: 101%;
+    left: -2000px;
+    transform: scaleZ(0);
+    transition: left .2s ease, transform .3s ease;
+}
+.InformacionGaes.active{
+    left: 0;
+    transform: scaleZ(1);
+}
+.InformacionGaes h3{
+    position: relative;
+    left: 4%;
+    top: 34%;
+    font-size: 2.2em;
+    color: #262626;
+    transition: color .5s ease;
+}
+.BoxCenter:hover h3{
+    color: #F2F2F2;
+}
+.RickRool{
+    position: absolute;
+    bottom: 3vh;
+    right: 4vh;
+    width: 45vh;
+    animation: floatImage 4s ease-in-out infinite;
+    animation-delay: .2s;
+}
+.FraseImagen{
+    position: absolute;
+    top: 38%;
+    right: -1000%;
+    overflow: hidden;
+    width: 450px;
+    height: 200px;
+    transition: right .2s ease;
+    animation: floatImage 10s ease-in-out infinite;
+    animation-delay: .2s;
+}
+.BoxCenter:hover .FraseImagen{
+    right: 4%;
+}
+.FraseImagen img{
+    position: relative;
+    width: 100%;
+    height: 100%;
+}

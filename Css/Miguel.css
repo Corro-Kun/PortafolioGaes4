@@ -1,0 +1,109 @@
+.InfoMiguel{
+    position: absolute;
+    top: 0;
+    width: 101%;
+    height: 101%;
+    padding: 10px 20px;
+    z-index: 11;
+    right: -2000px;
+    transform: scaleZ(0);
+    transition: right .2s ease, transform .3s ease;
+}
+.InfoMiguel.active{
+    right: 0;
+    transform: scaleZ(1);
+}
+.imagen4{
+    position: relative;
+    bottom: -17vh;
+    left: 140px;
+    height: 500px;
+    width: 500px;
+    overflow: hidden;
+    background: transparent;
+    border: 2px solid #262626;
+    border-radius: 15px;
+    box-shadow: 0 0 15px rgba(41, 41, 41, 0.986), inset 0 0 10px rgba(26, 26, 26, 0.986);
+    transform: scale(0);
+    transition: transform .3s ease,box-shadow .5s ease, border .5s ease;
+}
+.imagen4 img{
+    position: relative;
+    height: calc(100% - 0px);
+    width: calc(100% - 0px);
+}
+.BoxCenter:hover .imagen4{
+    border: 2px solid #F2F2F2;
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.986), inset 0 0 10px rgba(255, 255, 255, 0.986);
+    transform: scale(1);
+    animation: floatImage 4s ease-in-out infinite;
+    animation-delay: .2s;
+}
+.InfoMiguel h2{
+    position:absolute;
+    right: -500px;
+    bottom: 600px;
+    font-size: 1.8em;
+    color: #F2F2F2;
+    font-weight: 500;
+    margin-left: 40px;
+    transition: right .2s ease;
+}
+.InfoMiguel .Name4{
+    bottom: 520px;
+    font-size: 3.5em;
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.986);
+}
+#Soy4{
+    bottom: 470px;
+}
+#Soy4 .multiText4{
+    color: #F2F2F2;
+    font-size: 1.3em;
+    text-shadow: 0 0 5px rgba(255, 255, 255, 0.986);
+}
+.BoxCenter:hover .InfoMiguel h2{
+    right: 55px;
+}
+
+.Pasar4{
+    position: absolute;
+    right: -10px;
+    bottom: -5px;
+    width: 50px;
+    height: 50px;
+    font-size: 2.2em;
+    color: #262626;
+    background-color: #F2F2F2;
+    border-radius: 10px;
+    transform: scale(0);
+    transition: box-shadow .2s ease, transform .5s ease;
+    cursor: pointer;
+}
+.Pasar4:hover{
+    box-shadow: 0 0 30px rgba(255, 255, 255, 0.986), inset 0 0 10px rgba(255, 255, 255, 0.986);
+}
+.BoxCenter:hover .Pasar4{
+    transform: scale(1);
+}
+.FacebookM{
+    position: absolute;
+    right: 55px;
+    bottom: 280px;
+    font-size: 2.2em;
+    color: #F2F2F2;
+    cursor: pointer;
+    transform: scale(0);
+    transition: color .5s ease, transform .5s ease;
+}
+.YoutubeM{
+    position: absolute;
+    right: 110px;
+    bottom: 280px;
+    font-size: 2.2em;
+    color: #F2F2F2;
+    cursor: pointer;
+    transform: scaleX(0);
+    transition: color .5s ease, transform .5s ease;
+}
+
